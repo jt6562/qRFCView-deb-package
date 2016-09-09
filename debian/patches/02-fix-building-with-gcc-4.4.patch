@@ -1,0 +1,78 @@
+--- qrfcview-0.62.orig/src/cdialogfind.h
++++ qrfcview-0.62/src/cdialogfind.h
+@@ -24,6 +24,8 @@
+ #include <qdialog.h>
+ #include <ui_find_dlg.h>
+ 
++#include <stdint.h>
++
+ #define FIND_OPTIONSFLAG_REGEXP   0x01
+ #define FIND_OPTIONSFLAG_CASE     0x02
+ #define FIND_OPTIONSFLAG_WHOLE    0x04
+--- qrfcview-0.62.orig/src/rfcloader.h
++++ qrfcview-0.62/src/rfcloader.h
+@@ -25,6 +25,8 @@
+ #include <QStringList>
+ #include <QMap>
+ 
++#include <stdint.h>
++
+ /**
+ @author Romain Rollet
+ */
+--- qrfcview-0.62.orig/src/mdichild.h
++++ qrfcview-0.62/src/mdichild.h
+@@ -25,6 +25,8 @@
+ 
+     #include <QSplitter>
+ 
++    #include <stdint.h>
++
+ #define PARSER_NORMALTEXT 0
+ #define PARSER_BIBTEXT 1
+ #define PARSER_HEADER 2
+--- qrfcview-0.62.orig/src/mainwindow.h
++++ qrfcview-0.62/src/mainwindow.h
+@@ -25,6 +25,8 @@
+ #include <QMainWindow>
+ #include <QDir>
+ 
++#include <stdint.h>
++
+ class QAction;
+ class QMenu;
+ class QWorkspace;
+--- qrfcview-0.62.orig/src/qrfceditor.h
++++ qrfcview-0.62/src/qrfceditor.h
+@@ -22,6 +22,9 @@
+ #define QRFCEDITOR_H
+ 
+ #include <qtextbrowser.h>
++
++#include <stdint.h>
++
+ class QStringList;
+ 
+ /**
+--- qrfcview-0.62.orig/src/cdialogsetdirectory.h
++++ qrfcview-0.62/src/cdialogsetdirectory.h
+@@ -23,6 +23,8 @@
+ #include <QStringList>
+ #include <ui_setdirectory_dlg.h>
+ 
++#include <stdint.h>
++
+ /**
+ @author Romain Rollet
+ */
+--- qrfcview-0.62.orig/src/TitleModel.h
++++ qrfcview-0.62/src/TitleModel.h
+@@ -30,6 +30,8 @@
+ #include <QModelIndex>
+ #include <QVariant>
+ 
++#include <stdint.h>
++
+ #define MAX_TITLE_LEVEL 16
+ 
+ class CTitleItem;

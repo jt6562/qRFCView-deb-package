@@ -1,0 +1,29 @@
+Index: qrfcview-0.62/src/mainwindow.cpp
+===================================================================
+--- qrfcview-0.62.orig/src/mainwindow.cpp
++++ qrfcview-0.62/src/mainwindow.cpp
+@@ -1,5 +1,5 @@
+ /****************************************************************************
+-  
++
+     qRFCView, A smart IETF RFC viewer based on the Qt4 library.
+     Copyright (C) 2005 Mitsubishi Electric ITE-TCL, R. Rollet (rollet@tcl.ite.mee.com)
+ 
+@@ -37,6 +37,8 @@ MainWindow::MainWindow():m_qLastOpenDir(
+ {
+     m_qTabWidget = new QTabWidget(this);
+ 
++    m_qTabWidget->setMovable(true);
++
+     setCentralWidget(m_qTabWidget);
+ 
+     connect(m_qTabWidget, SIGNAL(currentChanged(int)),
+@@ -259,7 +261,7 @@ void MainWindow::about()
+ 
+ void MainWindow::updateMenus()
+ {
+-/*    
++/*
+     bool hasMdiChild = (activeMdiChild() != 0);
+ 
+     closeAct->setEnabled(hasMdiChild);

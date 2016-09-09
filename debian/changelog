@@ -1,0 +1,82 @@
+qrfcview (0.62-5.3) unstable; urgency=low
+
+  * Non-maintainer update.
+  * d/p/04_find_dialog_focus.patch: the QComboBox get focus, when find dialog
+    opened.
+  * d/p/05_optimize_tabwidget.patch: Tabwidget can be movable.
+
+ -- Ji Tao <jt6562@gmail.com>  Fri, 9 Sep 2016 10:58:03 +0800
+
+qrfcview (0.62-5.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * d/p/03-max_rfc_to_99999.patch: allow RFC numbers larger than 5000
+    (Closes: #512734)
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 19 Feb 2013 15:45:19 +0100
+
+qrfcview (0.62-5.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix build with gcc-4.4 using patch from Martin Michlmayr (Closes:
+    #505341)
+
+ -- Christoph Egger <christoph@debian.org>  Fri, 25 Dec 2009 22:20:17 +0100
+
+qrfcview (0.62-5) unstable; urgency=low
+
+  * debian/control
+    * Updated Standards-Version to 3.7.3
+    * Added Homepage: field
+  * debian/menu: use now menu-2 format
+  * debian/copyright: adapted to the machine-interpretable proposal in
+    http://wiki.debian.org/Proposals/CopyrightFormat
+  * Replaced dpatch with quilt
+  * debian/rules: improved clean target thanks to Daniel Baumann
+
+ -- Frederic Daniel Luc Lehobey <Frederic@Lehobey.net>  Wed, 23 Apr 2008 18:10:48 +0200
+
+qrfcview (0.62-4) unstable; urgency=low
+
+  * Changed maintainer address
+  * Fixed a typo in manpage
+  * Added a debian/watch file
+  * Pushed debian/compat to 5
+  * debian/control: removed redundant build-dependency on libglib2.0-dev
+    and pushed debhelper version
+  * Being lintian clean again
+    * Updated menu entry to fit new policy
+    * Updated Freedesktop menu entry to menu-spec 1.0
+    * debian/rules: minor fixes
+
+ -- Frederic Daniel Luc Lehobey <Frederic@Lehobey.net>  Tue, 21 Aug 2007 12:51:00 +0200
+
+qrfcview (0.62-3) unstable; urgency=low
+
+  * debian/copyright: clarified icons licenses
+  * debian/rules, control and patches: introduced dpatch use for
+    01-removal-of-spurious-debug-output.dpatch
+  * debian/control: added build-dependency on libglib2.0-dev (and dpatch)
+
+ -- Frederic Daniel Luc Lehobey <Frederic.Lehobey@free.fr>  Sat, 14 Oct 2006 23:41:51 +0200
+
+qrfcview (0.62-2) unstable; urgency=low
+
+  * debian/rules: renamed generated icons to qrfcview instead of rfcview thanks
+    to Daniel Baumann <daniel@debian.org>
+  * debian/control: added Suggests: doc-rfc
+
+ -- Frederic Daniel Luc Lehobey <Frederic.Lehobey@free.fr>  Fri, 28 Jul 2006 00:33:57 +0200
+
+qrfcview (0.62-1) unstable; urgency=low
+
+  * Initial release (Closes: #378587)
+  * debian/control: fixed duplicate dependencies thanks to Ted Percival
+    <ted@midg3t.net>
+  * debian/control: Build-conflicts with qt3-dev-tools thanks to andeus
+  * debian/README.Debian: clarified doc-rfc usage thanks to Neil Williams
+    <linux@codehelp.co.uk>
+  * Much improved package quality thanks to Daniel Baumann <daniel@debian.org>
+    careful mentoring, patch and advice
+
+ -- Frederic Daniel Luc Lehobey <Frederic.Lehobey@free.fr>  Thu, 27 Jul 2006 10:57:03 +0200

@@ -1,0 +1,9 @@
+44a83fbba39e730c90d69a379140b560  usr/bin/qRFCView
+875a303202435d08becd347756a2bbe1  usr/share/applications/qrfcview.desktop
+846f7307b9babd07ceb5ff17ca1cfe9f  usr/share/doc/qrfcview/README.Debian
+7c11d806025585e8ae2e4f8c0b72ccbd  usr/share/doc/qrfcview/changelog.Debian.gz
+c165ef26b2dcbd9ee2379936553b0bcb  usr/share/doc/qrfcview/copyright
+8d70b9b252eaa106ebd72222e35f7799  usr/share/icons/qrfcview.png
+c561d5d0ac17af1725dfb4c537abf7e9  usr/share/man/man1/qRFCView.1.gz
+eeffce5db5bd56a943af42188434cbd8  usr/share/menu/qrfcview
+faa45b374f6b066fce6b3c45179c0bee  usr/share/pixmaps/qrfcview.xpm

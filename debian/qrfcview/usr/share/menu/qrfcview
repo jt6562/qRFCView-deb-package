@@ -1,0 +1,9 @@
+!C menu-2
+?package(qrfcview):
+  needs="X11"
+  section="Applications/Text"
+  title="qRFCView"
+  description="RFC Viewer"
+  command="/usr/bin/qRFCView"
+  icon="/usr/share/pixmaps/qrfcview.xpm"
+;

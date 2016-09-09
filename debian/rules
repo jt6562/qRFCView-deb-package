@@ -1,0 +1,69 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/quilt/quilt.make
+
+build: build-stamp
+
+build-stamp: patch
+	dh_testdir
+
+	# Compilation.
+	qmake -unix rfcview.pro
+	$(MAKE)
+
+	touch $@
+
+clean: unpatch
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+
+	# Clean up after the build process.
+	[ ! -f Makefile ] || $(MAKE) clean
+	find -name Makefile | xargs rm -f
+	-rm -rf bin/qRFCView
+
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+
+	# Installation of the binary into debian/qrfcview.
+	install -D bin/qRFCView debian/qrfcview/usr/bin/qRFCView
+
+	# Installation of desktop file.
+	install -D -m 644 debian/desktop/qrfcview debian/qrfcview/usr/share/applications/qrfcview.desktop
+
+	# Installation of icon and pixmap (hence imagemagick dependency).
+	install -d -m 755 debian/qrfcview/usr/share/icons
+	convert -thumbnail 32x32 images/rfcview.png debian/qrfcview/usr/share/icons/qrfcview.png
+	install -d -m 755 debian/qrfcview/usr/share/pixmaps
+	convert -thumbnail 32x32 images/rfcview.png debian/qrfcview/usr/share/pixmaps/qrfcview.xpm
+
+binary-indep: build install
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installmenu
+	dh_installman debian/manpage/qRFCView.1
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

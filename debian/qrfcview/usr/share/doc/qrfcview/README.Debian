@@ -1,0 +1,10 @@
+qrfcview for Debian
+-------------------
+
+If you have installed the doc-rfc (non-free) package you might want to take
+advantage of the locally installed RFCs. You can add the
+/usr/share/doc/RFC/links/ directory to the directories used by qRFCView (menu
+Edit -> Set Directories). Unfortunately most of the files there are gzipped
+which is something qRFCView does not deal with yet (it expects only .txt files).
+
+ -- Frederic Daniel Luc Lehobey <Frederic.Lehobey@free.fr>  Tue, 25 Jul 2006 12:34:41 +0200

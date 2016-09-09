@@ -1,0 +1,24 @@
+This package was downloaded from http://qrfcview.berlios.de/
+
+Files: debian/*
+Copyright: © 2006-2008 Frederic Daniel Luc Lehobey <Frederic@Lehobey.net>
+License: GPL-3+
+ The Debian packaging is under the GPL, version 3 or later
+
+Files: *
+Copyright: © 2005 Mitsubishi Electric ITE-TCL,
+           Romain Rollet <rfcview@gmail.com>
+Licence: GPL-2+
+
+Files: TitleModel.cpp, TitleModel.h
+Copyright: © 2005 Mitsubishi Electric ITE-TCL, R. Rollet <rfcview@gmail.com>
+           © 2005-2005 Trolltech AS. All rights reserved.
+Licence: GPL-2
+
+Files: backward.png, close.png, copy.png, cut.png, find.png, forward.png,
+       load.png, new.png, open.png, paste.png, print.png, save.png
+Copyright: © 1994-2006 Trolltech ASA <http://www.trolltech.no/>
+Licence: GPL-2
+
+On Debian systems, the complete text of common licenses can be found in
+'/usr/share/common-licenses/'.

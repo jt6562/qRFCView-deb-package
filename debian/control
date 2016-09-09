@@ -1,0 +1,23 @@
+Source: qrfcview
+Section: doc
+Priority: optional
+Maintainer: Frederic Daniel Luc Lehobey <Frederic@Lehobey.net>
+Build-Depends: debhelper (>= 5), imagemagick, libqt4-dev, quilt
+Build-Conflicts: qt3-dev-tools
+Homepage: http://qrfcview.berlios.de/
+Standards-Version: 3.7.3
+
+Package: qrfcview
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: doc-rfc
+Description: viewer for IETF RFCs
+ qRFCView is a smart IETF RFC viewer based on the Qt4 library featuring:
+ .
+  - automatic table of content, with direct opening of section;
+  - handling of RFC internal cross-references;
+  - automatic downloading of a referenced RFC from the IETF web site
+    on a simple click;                                              
+  - caching of RFC in a local directory;
+  - tab-browsing of RFC;
+  - searching.

@@ -1,0 +1,5 @@
+01-removal-of-spurious-debug-output.patch
+02-fix-building-with-gcc-4.4.patch
+03-max_rfc_to_99999.patch
+04_find_dialog_focus.patch
+05_optimize_tabwidget.patch
